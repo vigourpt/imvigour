@@ -2,7 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/affiliate-marketing-calculator/*"
+  to = "https://gregarious-manatee-e6080d.netlify.app/:splat"
   status = 200
