@@ -6,7 +6,7 @@
   NODE_VERSION = "20"
 
 [[redirects]]
-  from = "/Affiliate-Marketing-Calculator/*"
+  from = "/affiliate-marketing-calculator/*"
   to = "https://gregarious-manatee-e6080d.netlify.app/:splat"
   status = 200
 
