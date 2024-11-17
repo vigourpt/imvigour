@@ -9,3 +9,4 @@
   from = "/affiliate-marketing-calculator/*"
   to = "https://gregarious-manatee-e6080d.netlify.app/:splat"
   status = 200
+# Force rebuild
