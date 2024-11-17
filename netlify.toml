@@ -7,7 +7,7 @@
 
 [[redirects]]
   from = "/affiliate-marketing-calculator/*"
-  to = "https://gregarious-manatee-e6080d.netlify.app/:splat"
+  to = "/affiliate-marketing-calculator/index.html"
   status = 200
 
 [[redirects]]
