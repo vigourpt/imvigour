@@ -2,14 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/nicheanalyzerdownload/', // Set this to the subdirectory name
+  base: '/niche-analyzer/',
   plugins: [react()],
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: 'index.js',
-        chunkFileNames: 'index.js',
-        assetFileNames: 'index[extname]',
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
   },
