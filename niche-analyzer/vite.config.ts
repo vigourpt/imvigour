@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/niche-analyzer/',
   plugins: [react()],
   build: {
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
