@@ -3,8 +3,18 @@
   publish = "dist"
 
 [[redirects]]
+  from = "/affiliate-marketing-calculator"
+  to = "/affiliate-marketing-calculator/index.html"
+  status = 200
+
+[[redirects]]
   from = "/affiliate-marketing-calculator/*"
   to = "/affiliate-marketing-calculator/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/niche-analyzer"
+  to = "/niche-analyzer/index.html"
   status = 200
 
 [[redirects]]
