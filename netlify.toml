@@ -21,6 +21,16 @@
   force = true
 
 [[headers]]
+  for = "/affiliate-marketing-calculator/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/niche-analyzer/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
   for = "/*"
     [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
