@@ -28,7 +28,7 @@ if (fs.existsSync('dist/affiliate-marketing-calculator')) {
 }
 fs.mkdirSync('dist/affiliate-marketing-calculator', { recursive: true });
 process.chdir('affiliatemarketingcalculator');
-execSync('vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
+execSync('BUILD_TARGET=affiliate-marketing-calculator vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
 process.chdir('..');
 
 console.log('\nBuild complete! Directory structure:');
