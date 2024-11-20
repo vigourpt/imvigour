@@ -8,8 +8,6 @@ if (fs.existsSync('dist')) {
   fs.rmSync('dist', { recursive: true });
 }
 fs.mkdirSync('dist');
-fs.mkdirSync('dist/affiliate-marketing-calculator', { recursive: true });
-fs.mkdirSync('dist/niche-analyzer', { recursive: true });
 
 // Build main AIDA app
 console.log('\nBuilding main AIDA app...');
@@ -23,7 +21,7 @@ process.chdir('..');
 
 // Build affiliate marketing calculator
 console.log('\nBuilding affiliate marketing calculator...');
-process.chdir('affiliatemarketingcalculator');
+process.chdir('affiliate-marketing-calculator');
 execSync('vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
 process.chdir('..');
 
