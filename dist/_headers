@@ -1,0 +1,26 @@
+/*
+  Content-Type: text/html; charset=utf-8
+
+/assets/*
+  ! Content-Type
+  Content-Type: application/javascript
+
+/assets/*.css
+  ! Content-Type
+  Content-Type: text/css
+
+/affiliate-marketing-calculator/assets/*
+  ! Content-Type
+  Content-Type: application/javascript
+
+/affiliate-marketing-calculator/assets/*.css
+  ! Content-Type
+  Content-Type: text/css
+
+/niche-analyzer/assets/*
+  ! Content-Type
+  Content-Type: application/javascript
+
+/niche-analyzer/assets/*.css
+  ! Content-Type
+  Content-Type: text/css
