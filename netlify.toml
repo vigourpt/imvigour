@@ -6,40 +6,49 @@
   NODE_VERSION = "20"
 
 [[headers]]
-  for = "/assets/index-*.js"
+  for = "/"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "text/html; charset=utf-8"
 
 [[headers]]
-  for = "/assets/index-*.css"
+  for = "/assets/*"
   [headers.values]
-    Content-Type = "text/css; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/affiliate-marketing-calculator/assets/index-*.js"
+  for = "/assets/*.css"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "text/css"
 
 [[headers]]
-  for = "/affiliate-marketing-calculator/assets/index-*.css"
+  for = "/affiliate-marketing-calculator/"
   [headers.values]
-    Content-Type = "text/css; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "text/html; charset=utf-8"
 
 [[headers]]
-  for = "/niche-analyzer/assets/index-*.js"
+  for = "/affiliate-marketing-calculator/assets/*"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/niche-analyzer/assets/index-*.css"
+  for = "/affiliate-marketing-calculator/assets/*.css"
   [headers.values]
-    Content-Type = "text/css; charset=utf-8"
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/niche-analyzer/"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
+
+[[headers]]
+  for = "/niche-analyzer/assets/*"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/niche-analyzer/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css"
 
 [[redirects]]
   from = "/affiliate-marketing-calculator/*"
