@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+  STANDALONE = "true"
+
 [[redirects]]
   from = "https://imvigour.netlify.app/affiliate-marketing-calculator/*"
   to = "https://imvigour.com/affiliate-marketing-calculator/:splat"

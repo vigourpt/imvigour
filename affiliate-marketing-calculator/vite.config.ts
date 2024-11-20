@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+const isStandalone = process.env.STANDALONE === 'true';
+console.log('Building in', isStandalone ? 'standalone' : 'subdirectory', 'mode');
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.STANDALONE ? '/' : '/affiliate-marketing-calculator/',
+  base: isStandalone ? '/' : '/affiliate-marketing-calculator/',
   plugins: [react()],
   build: {
     outDir: 'dist',
