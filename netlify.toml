@@ -4,7 +4,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  STANDALONE = "true"
 
 [[headers]]
   for = "/*"
@@ -14,12 +13,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Content-Security-Policy = "upgrade-insecure-requests"
-
-[[redirects]]
-  from = "https://imvigour.netlify.app/affiliate-marketing-calculator"
-  to = "https://imvigour.com/affiliate-marketing-calculator"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/affiliate-marketing-calculator/*"
