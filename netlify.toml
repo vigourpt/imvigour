@@ -6,32 +6,32 @@
   NODE_VERSION = "20"
 
 [[headers]]
-  for = "/assets/index-*.js"
+  for = "/assets/*"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/assets/index-*.css"
+  for = "/assets/*.css"
   [headers.values]
     Content-Type = "text/css"
 
 [[headers]]
-  for = "/affiliate-marketing-calculator/assets/index-*.js"
+  for = "/affiliate-marketing-calculator/assets/*"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/affiliate-marketing-calculator/assets/index-*.css"
+  for = "/affiliate-marketing-calculator/assets/*.css"
   [headers.values]
     Content-Type = "text/css"
 
 [[headers]]
-  for = "/niche-analyzer/assets/index-*.js"
+  for = "/niche-analyzer/assets/*"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/niche-analyzer/assets/index-*.css"
+  for = "/niche-analyzer/assets/*.css"
   [headers.values]
     Content-Type = "text/css"
 
