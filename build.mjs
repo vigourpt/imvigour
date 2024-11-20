@@ -22,16 +22,14 @@ process.chdir('..');
 // Build affiliate marketing calculator
 console.log('\nBuilding affiliate marketing calculator...');
 process.chdir('affiliate-marketing-calculator');
-execSync('STANDALONE=true vite build', { 
-  stdio: 'inherit',
-  env: { ...process.env, STANDALONE: 'true' }
-});
-// Copy build output to main dist directory
-if (fs.existsSync('dist')) {
-  fs.cpSync('dist', '../dist/affiliate-marketing-calculator', { recursive: true });
-  fs.rmSync('dist', { recursive: true });
-}
+execSync('vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
 process.chdir('..');
+
+// Ensure all assets have correct file permissions
+console.log('\nSetting file permissions...');
+execSync('chmod -R 644 dist/assets/*', { stdio: 'inherit' });
+execSync('chmod -R 644 dist/affiliate-marketing-calculator/assets/*', { stdio: 'inherit' });
+execSync('chmod -R 644 dist/niche-analyzer/assets/*', { stdio: 'inherit' });
 
 console.log('\nBuild complete! Directory structure:');
 execSync('ls -la dist/', { stdio: 'inherit' });
