@@ -19,13 +19,11 @@ process.chdir('niche-analyzer');
 execSync('vite build --outDir ../dist/niche-analyzer', { stdio: 'inherit' });
 process.chdir('..');
 
-// Build affiliate marketing calculator
+// Build affiliate marketing calculator as standalone
 console.log('\nBuilding affiliate marketing calculator...');
 process.chdir('affiliate-marketing-calculator');
-execSync('vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
+execSync('vite build', { stdio: 'inherit' });
 process.chdir('..');
 
 console.log('\nBuild complete! Directory structure:');
 execSync('ls -la dist/', { stdio: 'inherit' });
-execSync('ls -la dist/affiliate-marketing-calculator/', { stdio: 'inherit' });
-execSync('ls -la dist/niche-analyzer/', { stdio: 'inherit' });

@@ -2,8 +2,22 @@
   command = "npm run build"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "20"
+[[redirects]]
+  from = "/affiliate-marketing-calculator"
+  to = "https://imvigour.com/affiliate-marketing-calculator"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiliate-marketing-calculator/*"
+  to = "https://imvigour.com/affiliate-marketing-calculator/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/niche-analyzer/*"
+  to = "/niche-analyzer/index.html"
+  status = 200
 
 [[redirects]]
   from = "/*"
