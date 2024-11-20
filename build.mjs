@@ -22,7 +22,13 @@ process.chdir('..');
 // Build affiliate marketing calculator
 console.log('\nBuilding affiliate marketing calculator...');
 process.chdir('affiliate-marketing-calculator');
-execSync('vite build --outDir ../dist/affiliate-marketing-calculator', { stdio: 'inherit' });
+execSync('vite build', { stdio: 'inherit' }); // Build in its own dist first
+if (fs.existsSync('dist')) {
+  // Copy the contents to the main dist directory
+  fs.cpSync('dist', '../dist/affiliate-marketing-calculator', { recursive: true });
+  // Clean up the local dist
+  fs.rmSync('dist', { recursive: true });
+}
 process.chdir('..');
 
 // Create _headers file in dist directory
@@ -77,7 +83,14 @@ execSync('chmod -R 644 dist/assets/*', { stdio: 'inherit' });
 execSync('chmod -R 644 dist/affiliate-marketing-calculator/assets/*', { stdio: 'inherit' });
 execSync('chmod -R 644 dist/niche-analyzer/assets/*', { stdio: 'inherit' });
 
+// List the contents of all build directories
 console.log('\nBuild complete! Directory structure:');
 execSync('ls -la dist/', { stdio: 'inherit' });
 execSync('ls -la dist/affiliate-marketing-calculator/', { stdio: 'inherit' });
 execSync('ls -la dist/niche-analyzer/', { stdio: 'inherit' });
+
+// Verify assets exist
+console.log('\nVerifying assets:');
+execSync('ls -la dist/assets/', { stdio: 'inherit' });
+execSync('ls -la dist/affiliate-marketing-calculator/assets/', { stdio: 'inherit' });
+execSync('ls -la dist/niche-analyzer/assets/', { stdio: 'inherit' });
