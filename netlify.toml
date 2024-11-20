@@ -6,29 +6,34 @@
   NODE_VERSION = "20"
 
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/affiliate-marketing-calculator/assets/*"
+  for = "/assets/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "text/css"
 
 [[headers]]
-  for = "/niche-analyzer/assets/*"
+  for = "/affiliate-marketing-calculator/assets/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/*.css"
+  for = "/affiliate-marketing-calculator/assets/*.css"
   [headers.values]
-    Content-Type = "text/css; charset=utf-8"
+    Content-Type = "text/css"
 
 [[headers]]
-  for = "/*.js"
+  for = "/niche-analyzer/assets/*.js"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/niche-analyzer/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css"
 
 [[headers]]
   for = "/*"
@@ -37,7 +42,6 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "upgrade-insecure-requests"
 
 [[redirects]]
   from = "/affiliate-marketing-calculator/*"
