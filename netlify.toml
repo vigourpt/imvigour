@@ -16,8 +16,8 @@
     Content-Security-Policy = "upgrade-insecure-requests"
 
 [[redirects]]
-  from = "https://imvigour.netlify.app/*"
-  to = "https://imvigour.com/:splat"
+  from = "https://imvigour.netlify.app/affiliate-marketing-calculator"
+  to = "https://imvigour.com/affiliate-marketing-calculator"
   status = 301
   force = true
 
