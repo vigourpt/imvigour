@@ -31,34 +31,6 @@ if (fs.existsSync('dist')) {
 }
 process.chdir('..');
 
-// Create _headers file in dist directory
-console.log('\nCreating _headers file...');
-const headersContent = `/assets/*-*.js
-  Content-Type: application/javascript
-
-/assets/*-*.css
-  Content-Type: text/css
-
-/affiliate-marketing-calculator/assets/*-*.js
-  Content-Type: application/javascript
-
-/affiliate-marketing-calculator/assets/*-*.css
-  Content-Type: text/css
-
-/niche-analyzer/assets/*-*.js
-  Content-Type: application/javascript
-
-/niche-analyzer/assets/*-*.css
-  Content-Type: text/css
-
-/*
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin`;
-
-fs.writeFileSync(path.join('dist', '_headers'), headersContent);
-
 // Ensure all assets have correct file permissions
 console.log('\nSetting file permissions...');
 execSync('chmod -R 644 dist/assets/*', { stdio: 'inherit' });
