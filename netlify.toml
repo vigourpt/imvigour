@@ -5,6 +5,36 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[[headers]]
+  for = "/assets/index-*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/assets/index-*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/affiliate-marketing-calculator/assets/index-*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/affiliate-marketing-calculator/assets/index-*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/niche-analyzer/assets/index-*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/niche-analyzer/assets/index-*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
 [[redirects]]
   from = "/affiliate-marketing-calculator/*"
   to = "/affiliate-marketing-calculator/index.html"
