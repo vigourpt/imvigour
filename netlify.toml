@@ -7,8 +7,14 @@
   STANDALONE = "true"
 
 [[redirects]]
-  from = "https://imvigour.netlify.app/affiliate-marketing-calculator/*"
-  to = "https://imvigour.com/affiliate-marketing-calculator/:splat"
+  from = "https://imvigour.netlify.app/*"
+  to = "https://imvigour.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiliate-marketing-calculator"
+  to = "/affiliate-marketing-calculator/"
   status = 301
   force = true
 
@@ -16,6 +22,12 @@
   from = "/affiliate-marketing-calculator/*"
   to = "/affiliate-marketing-calculator/index.html"
   status = 200
+  force = true
+
+[[redirects]]
+  from = "/niche-analyzer"
+  to = "/niche-analyzer/"
+  status = 301
   force = true
 
 [[redirects]]
