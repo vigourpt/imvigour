@@ -6,6 +6,36 @@
   NODE_VERSION = "20"
 
 [[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/affiliate-marketing-calculator/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/affiliate-marketing-calculator/assets/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/niche-analyzer/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/niche-analyzer/assets/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
