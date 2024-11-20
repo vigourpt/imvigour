@@ -33,40 +33,22 @@ process.chdir('..');
 
 // Create _headers file in dist directory
 console.log('\nCreating _headers file...');
-const headersContent = `/*.js
+const headersContent = `/assets/*-*.js
   Content-Type: application/javascript
 
-/*.css
+/assets/*-*.css
   Content-Type: text/css
 
-/assets/*.js
+/affiliate-marketing-calculator/assets/*-*.js
   Content-Type: application/javascript
 
-/assets/*.css
+/affiliate-marketing-calculator/assets/*-*.css
   Content-Type: text/css
 
-/affiliate-marketing-calculator/*.js
+/niche-analyzer/assets/*-*.js
   Content-Type: application/javascript
 
-/affiliate-marketing-calculator/*.css
-  Content-Type: text/css
-
-/affiliate-marketing-calculator/assets/*.js
-  Content-Type: application/javascript
-
-/affiliate-marketing-calculator/assets/*.css
-  Content-Type: text/css
-
-/niche-analyzer/*.js
-  Content-Type: application/javascript
-
-/niche-analyzer/*.css
-  Content-Type: text/css
-
-/niche-analyzer/assets/*.js
-  Content-Type: application/javascript
-
-/niche-analyzer/assets/*.css
+/niche-analyzer/assets/*-*.css
   Content-Type: text/css
 
 /*
@@ -89,7 +71,7 @@ execSync('ls -la dist/', { stdio: 'inherit' });
 execSync('ls -la dist/affiliate-marketing-calculator/', { stdio: 'inherit' });
 execSync('ls -la dist/niche-analyzer/', { stdio: 'inherit' });
 
-// Verify assets exist
+// Verify assets
 console.log('\nVerifying assets:');
 execSync('ls -la dist/assets/', { stdio: 'inherit' });
 execSync('ls -la dist/affiliate-marketing-calculator/assets/', { stdio: 'inherit' });

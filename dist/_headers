@@ -1,37 +1,19 @@
-/*.js
+/assets/*-*.js
   Content-Type: application/javascript
 
-/*.css
+/assets/*-*.css
   Content-Type: text/css
 
-/assets/*.js
+/affiliate-marketing-calculator/assets/*-*.js
   Content-Type: application/javascript
 
-/assets/*.css
+/affiliate-marketing-calculator/assets/*-*.css
   Content-Type: text/css
 
-/affiliate-marketing-calculator/*.js
+/niche-analyzer/assets/*-*.js
   Content-Type: application/javascript
 
-/affiliate-marketing-calculator/*.css
-  Content-Type: text/css
-
-/affiliate-marketing-calculator/assets/*.js
-  Content-Type: application/javascript
-
-/affiliate-marketing-calculator/assets/*.css
-  Content-Type: text/css
-
-/niche-analyzer/*.js
-  Content-Type: application/javascript
-
-/niche-analyzer/*.css
-  Content-Type: text/css
-
-/niche-analyzer/assets/*.js
-  Content-Type: application/javascript
-
-/niche-analyzer/assets/*.css
+/niche-analyzer/assets/*-*.css
   Content-Type: text/css
 
 /*
