@@ -22,7 +22,7 @@ process.chdir('..');
 // Build affiliate marketing calculator
 console.log('\nBuilding affiliate marketing calculator...');
 process.chdir('affiliate-marketing-calculator');
-execSync('vite build', { stdio: 'inherit' });
+execSync('STANDALONE=true vite build', { stdio: 'inherit' });
 // Copy build output to main dist directory
 if (fs.existsSync('dist')) {
   fs.cpSync('dist', '../dist/affiliate-marketing-calculator', { recursive: true });
